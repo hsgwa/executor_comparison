@@ -19,13 +19,13 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
-add_executable(single_thraed ./src/single_thread.cpp)
-ament_target_dependencies(single_thraed
+add_executable(single_thread ./src/single_thread.cpp)
+ament_target_dependencies(single_thread
 	rclcpp
 	std_msgs)
 
-add_executable(multi_thraed ./src/multi_thread.cpp)
-ament_target_dependencies(multi_thraed
+add_executable(multi_thread ./src/multi_thread.cpp)
+ament_target_dependencies(multi_thread
 	rclcpp
 	std_msgs)
 
