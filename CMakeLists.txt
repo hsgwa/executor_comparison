@@ -29,6 +29,13 @@ ament_target_dependencies(multi_thread
 	rclcpp
 	std_msgs)
 
+install(TARGETS
+	single_thread
+	DESTINATION lib/${PROJECT_NAME})
+
+install(TARGETS
+	multi_thread
+	DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
